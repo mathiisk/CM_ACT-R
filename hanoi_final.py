@@ -9,7 +9,7 @@ class HanoiModel(ccm.Model):
     pegC = []
 
     def print_state(self):
-        print "State:", self.pegA, self.pegB, self.pegC
+        print("State: {}, {}, {}".format (self.pegA, self.pegB, self.pegC))
 
 
 class HanoiAgent(ACTR):
@@ -45,7 +45,7 @@ class HanoiAgent(ACTR):
             # move disk
             disk_number = from_peg_list[0]
             to_peg_list.insert(0, from_peg_list.pop(0))
-            print "Moved {} from {} to {}".format(disk_number, fromPeg, toPeg)
+            print("Moved {} from {} to {}".format(disk_number, fromPeg, toPeg))
             self.moves += 1
             # update history of last move
             history.modify(from_peg=fromPeg)
@@ -53,7 +53,7 @@ class HanoiAgent(ACTR):
             self.parent.print_state()
 
         if len(self.parent.pegC) == 1 and len(self.parent.pegA)==1 and len(self.parent.pegB)==1:
-            print "Goal achieved: All disks are spread"
+            print("Goal achieved: All disks are spread")
             goal.set('biggest disk on pegC')
             subgoal_disk.set('3')
 
@@ -66,7 +66,7 @@ class HanoiAgent(ACTR):
             if (from_peg_list[0]==int(biggest) and toPeg=='pegC') or (from_peg_list[0]!=int(biggest)): # only move biggest peg to final position
                 disk_number = from_peg_list[0]
                 to_peg_list.insert(0, from_peg_list.pop(0))
-                print "Moved {} from {} to {}".format(disk_number, fromPeg, toPeg)
+                print("Moved {} from {} to {}".format(disk_number, fromPeg, toPeg))
                 self.moves += 1
                 history.modify(from_peg=fromPeg)
                 history.modify(to_peg=toPeg)
@@ -87,8 +87,8 @@ class HanoiAgent(ACTR):
             subgoal_disk.set('None')
 
     def terminate(goal='final_goal_achieved'):
-        print "Goal achieved: All disks are on pegC in the correct order!"
-        print "{} moves".format(self.moves)
+        print("Goal achieved: All disks are on pegC in the correct order!")
+        print("{} moves".format(self.moves))
         self.stop()
 
 
