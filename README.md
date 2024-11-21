@@ -24,10 +24,12 @@ https://github.com/sterlingsomers/ccmsuite
    
    Step 2: Activate the Conda environment
      On macOS/Linux
-       source activate ccm_env
+   
+        source activate ccm_env
    
      On Windows
-       activate ccm_env
+   
+        activate ccm_env
    
 - Option B: Using venv
   NOTE: Python's built-in 'venv' module does not support Python 2.7, so  instead use 'virtualenv'.
