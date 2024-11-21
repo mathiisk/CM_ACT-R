@@ -61,16 +61,23 @@ https://github.com/sterlingsomers/ccmsuite
        venv\Scripts\activate
 
 3. Clone this repository or download hanoi_final.py
-   
+
 4. Place Python script 'hanoi_final.py' into the ccmsuite directory
+
+# 5.  Open 'ccmsuite' folder as a project in your IDE, and as the interpreter select the created Conda environment. Run hanoi_final.py (RECOMMENDED)
+
+Alternatively (NOT RECOMMENDED, Errors are likely due to ccmsuite and whole Python 2.7 shebang)
+
+6. Place Python script 'hanoi_final.py' into the ccmsuite directory
    
-5. Ensure you are in ccmsuite directory and the environment is activated
+7. Ensure you are in ccmsuite directory and the environment is activated
    
        cd path/to/directory
    
-7. Run Our Script
+       activate ccm_env
+   
+9. Run Our Script
    
        python hanoi_final.py
 
-Alternatively, open ccmsuite folder as a project in your IDE, and as the interpreter select the created Conda environment. 
     
