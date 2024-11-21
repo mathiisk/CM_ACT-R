@@ -33,6 +33,7 @@ https://github.com/sterlingsomers/ccmsuite
         activate ccm_env
    
 - Option B: Using venv
+- 
   NOTE: Python's built-in 'venv' module does not support Python 2.7, so  instead use 'virtualenv'.
   
   Step 1: install 'virtualenv'
