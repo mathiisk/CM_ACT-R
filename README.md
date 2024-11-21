@@ -17,21 +17,24 @@ https://github.com/sterlingsomers/ccmsuite
 
 2. Set up a Python 2.7 Environment
  - Option A: Using Conda (RECOMMENDED)
-   Step 1: in terminal/command promt/Anaconda promt
-     conda create -n ccm_env python=2.7
+   
+   Step 1: in terminal/command prompt/Anaconda prompt
+   
+       conda create -n ccm_env python=2.7
    
    Step 2: Activate the Conda environment
      On macOS/Linux
-     source activate ccm_env
+       source activate ccm_env
    
      On Windows
-     activate ccm_env
+       activate ccm_env
    
 - Option B: Using venv
   NOTE: Python's built-in 'venv' module does not support Python 2.7, so  instead use 'virtualenv'.
   
   Step 1: install 'virtualenv'
-       pip install virtualenv
+  
+        pip install virtualenv
 
   Step 2: Navigate to the cloned repository:
   
@@ -45,23 +48,25 @@ https://github.com/sterlingsomers/ccmsuite
 
   Step 4: Activate the virtual environment:
   
-  On macOS/Linux 
-      source venv/bin/activate
+  On macOS/Linux
+  
+       source venv/bin/activate
 
   On Windows:
-      venv\Scripts\activate
+  
+       venv\Scripts\activate
 
-3. Clone this repository or simply download hanoi_final.py
+3. Clone this repository or download hanoi_final.py
    
 4. Place Python script 'hanoi_final.py' into the ccmsuite directory
    
 5. Ensure you are in ccmsuite directory and the environment is activated
    
-       cd path/to/directroy
+       cd path/to/directory
    
 7. Run Our Script
    
        python hanoi_final.py
 
-Alternatively open ccmsuite folder as project in your IDE and select the Interpreter the created Conda environment. 
+Alternatively, open ccmsuite folder as a project in your IDE, and as the interpreter select the created Conda environment. 
     
