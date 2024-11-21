@@ -23,6 +23,7 @@ https://github.com/sterlingsomers/ccmsuite
        conda create -n ccm_env python=2.7
    
    Step 2: Activate the Conda environment
+   
      On macOS/Linux
    
         source activate ccm_env
